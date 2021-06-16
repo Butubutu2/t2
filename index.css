@@ -1,0 +1,148 @@
+*{
+    font-family: kaiti;
+    margin: 0%;
+    padding: 0%;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+div{
+    -webkit-user-select: none;
+    user-select: none;
+    -ms-user-select: none;
+}
+.gameBody{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(to right,#A3D900,#63B8D3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gameArea{
+    width: calc(100% / 3);
+    height: 95%;
+    position: relative;
+    background: url("./images/bg.jpg") no-repeat;
+    background-size: cover;
+
+}
+.top{
+    width: 100%;
+    height:100%;
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+.time{
+    color: white;
+    margin: 5%;
+}
+.score{
+    color: yellow;
+    margin: 5%;
+}
+.time_num,.score_num{
+    font-size: 2vw;
+}
+.shadow{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.start{
+    color: white;
+    font-size: 2.6vw;
+    width: 21%;
+    background: url("./images/play.png")no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.gameover{
+    width: 80%;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; 
+    display: none;
+}
+.flytime{
+    color: yellow;
+    font-size: 45px;
+}
+.flytimenum{
+    color: green;
+    font-size: 60px;
+}
+.rank{
+    color: purple;
+    font-size: 35px;
+}
+.restart{
+    width: 200px;
+    height: 150px;
+    background: url("./images/play.png")no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+.enemy{
+    position: absolute;
+    top: 0%;
+    pointer-events: none;
+    width: 98px;
+    height: 76px;
+    background-size: contain;
+}
+.e1{
+    background: url("./images/e1.png")no-repeat;
+}
+.e2{
+    background: url("./images/e2.png")no-repeat;
+    background-size: contain;
+}
+.e3{
+    background: url("./images/e3.png")no-repeat;
+    background-size: contain;
+}
+.bullet{
+    width: 10px;
+    height: 35px;
+    position: absolute;
+    pointer-events: none;
+    background: url("./images/b.png")no-repeat;
+    background-size: contain;
+    top: 0%;
+}
+.me{
+    width: 106px;
+    height: 76px;
+    position: absolute;
+    pointer-events: none;
+    bottom: 0%;
+    left: calc(50% - 53px);
+    background: url("./images/me.png")no-repeat;
+    background-size: contain;
+}
+.gameRule{
+    width: calc(100% / 3);
+    height: 100%;
+    background: url("./images/give.png")no-repeat;
+    background-size: contain;
+}
